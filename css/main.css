@@ -1,0 +1,7 @@
+#container {
+  width: 23%;
+  height: 20%;
+  background-color: orange;
+  border-radius: 10px;
+  padding: 20px 5px 10px 20px;
+}
