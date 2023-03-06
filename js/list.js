@@ -14,16 +14,16 @@ clear.addEventListener("click", function temizle() {
 });
 save.addEventListener("click", listele);
 
-let sonuc = 0;
-let yaz = document.querySelector("#write");
-let art = document.querySelector("#art");
-let azalt = document.querySelector("#azalt");
-yaz.innerHTML = sonuc;
-function islem() {
-  this.id == "art"
-    ? (yaz.innerHTML = sonuc += 1)
-    : (yaz.innerHTML = sonuc -= 1);
+let solution = 0;
+let write = document.querySelector("#write");
+let increase = document.querySelector("#increase");
+let toReduce = document.querySelector("#toReduce");
+write.innerHTML = solution;
+function process() {
+  this.id == "increase"
+    ? (write.innerHTML = solution += 1)
+    : (write.innerHTML = solution -= 1);
 }
 
-art.addEventListener("click", islem);
-azalt.addEventListener("click", islem);
+increase.addEventListener("click", process);
+toReduce.addEventListener("click", process);
